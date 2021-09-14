@@ -1,0 +1,129 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/about_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100vh;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Flamenco', cursive;
+	font-size: 20px;
+}
+
+
+.clearfix:after{
+	content: "."; 
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+
+.main-nav{
+	float: right;
+	margin-top: 60px
+}
+
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+
+.main-nav li a{
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #57ff19
+}
+.about{
+	border-bottom: 2px solid #57ff19
+}
+
+
+.box{
+  width: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  padding-top: 20px;
+}
+.box h5{
+	padding-top: 20px;
+  	font-size: 22px;
+  	letter-spacing: 3px;
+  	font-weight: 100;
+}
+
+.other-info{
+  text-align : center;
+}
+
+.box p{
+	padding-top: 20px;
+	font-size: 15px;
+  	letter-spacing: 3px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+/*change in website*/
+
+@media only screen and (max-width: 768px){
+	.main-nav{display: none;}
+}

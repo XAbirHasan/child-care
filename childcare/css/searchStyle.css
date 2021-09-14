@@ -1,0 +1,133 @@
+body{
+	margin: 0px;
+	padding: 0px;
+
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/search_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100vh;
+
+	font-size: 20px;
+	overflow-x: hidden;
+	font-family: 'Flamenco', cursive;
+	box-sizing: border-box;
+}
+.clearfix:after{
+	content: "."; 
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header h1{
+	color: #f6fa00;
+	font-size: 232%; 
+	margin-bottom: 30px;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	padding: 20px;
+}
+
+.search-box-back{
+	background: rgba(44,62,80,0.7);
+	padding: 30px ;
+	border-radius: 50px;
+
+}
+
+.search-field{
+	display: inline-block;
+	padding: 15px 40px;
+
+	margin-top: 30px;
+	word-spacing: 4px;
+	letter-spacing: 3px;
+
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+
+	/*we can maek another class*/
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+
+}
+.location{
+	width: 400px;
+}
+.post{
+	width: 200px;
+}
+.btn{
+	display: inline-block;
+	padding: 15px 40px;
+
+	margin-top: 30px;
+	word-spacing: 4px;
+	letter-spacing: 3px;
+
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+
+	/*we can maek another class*/
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.btn:hover{
+	background-color: #0049a3;
+}
+
+.theme-change{
+	animation: themechange 3s infinite;
+}
+
+@keyframes themechange{
+
+	0%{color: #f6fa00}
+	25%{color: #6fff00}
+	50%{color: #00fbff}
+	75%{color: #00b7ff}
+	
+}
+
+/*change in website*/
+
+@media only screen and (max-width: 1180px){
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+}

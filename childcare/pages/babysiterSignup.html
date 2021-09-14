@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>babysitter sign Up</title>
+	<link rel="stylesheet" type="text/css" href="../css/babysiterSignupStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="row clearfix">
+		<img src="../img/logo1.png" class="logo" id="logo">
+			<ul class="main-nav">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a class="signup" href="signup.html">SIGN UP</a></li>
+			</ul>
+	</div>
+
+	<form action="../php/babysitterSignup.php" method="post">
+		<div class="signup-box signup-box-back">
+			<h1>Sign Up</h1>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="first name" name="fname" id="fname" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="last name" name="lname" id="lname">
+			</div>
+			<div class="textbox">
+				<i class="fas fa-address-card"></i>
+				<input type="text" placeholder="your post code" name="post" id="post" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-map-marked-alt"></i>
+				<input type="text" placeholder=" your area name" name="area" id="area" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-university"></i>
+				<input type="text" placeholder=" your bank name" name="bank" id="bank" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-wallet"></i>
+				<input type="text" placeholder="bank account number" name="account" id="account" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-comment-dollar"></i>
+				<input type="text" placeholder="expected salary" name="salary" id="salary" pattern="[1-9]{1,6}" required>
+			</div>
+
+			<div class="textbox">
+				<i class="fas fa-phone-alt"></i>
+				<input type="tel" placeholder="your phone number" name="phnNumber" id="phnNumber" pattern="01[0-9]{9}" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-at"></i>
+				<input type="email" placeholder="email id" name="userid" id="userid" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-lock"></i>
+				<input type="password" placeholder="password" name="password" id="password" required>
+			</div>
+			<!-- <div class="textbox">
+				<i class="fas fa-unlock-alt"></i>
+				<input type="password" placeholder="re-type password" name="repassword" id="repassword">
+			</div> -->
+			<div class="radiobox">
+				<input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+	  			<input type="radio" name="gender" id="gender" value="female"> Female<br>
+	  			<input type="radio" name="gender" id="gender" value="other"> Other<br><br>
+  			</div>
+
+			<input class="btn" type="submit" name="signupBtn" id="signupBtn" value="Sign up">
+			
+		</div>
+			
+	</form>
+</body>
+</html>

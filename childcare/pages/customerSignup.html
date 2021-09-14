@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>customer sign up</title>
+	<link rel="stylesheet" type="text/css" href="../css/customerSignupStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="row clearfix">
+		<img src="../img/logo1.png" class="logo" id="logo">
+			<ul class="main-nav">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a class="signup" href="signup.html">SIGN UP</a></li>
+			</ul>
+	</div>
+
+	<form action="../php/customerSignup.php" method="post">
+		<div class="signup-box signup-box-back">
+			<h1>Sign Up</h1>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="first name" name="fname" id="fname" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="last name" name="lname" id="lname">
+			</div>
+			<div class="textbox">
+				<i class="fas fa-home"></i>
+				<input type="text" placeholder="your house number" name="house" id="house" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-road"></i>
+				<input type="text" placeholder="your road number" name="road" id="road">
+			</div>
+			<div class="textbox">
+				<i class="fas fa-address-card"></i>
+				<input type="text" placeholder="your post code" name="post" id="post" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-map-marked-alt"></i>
+				<input type="text" placeholder=" your area name" name="area" id="area" required>
+			</div>
+
+			<div class="textbox">
+				<i class="fas fa-phone-alt"></i>
+				<input type="tel" placeholder="your phone number" name="phnNumber" id="phnNumber" pattern="01[0-9]{9}" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-baby"></i>
+				<input type="number" placeholder="you child number" name="child" id="child" min="1" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-at"></i>
+				<input type="email" placeholder="email id" name="userid" id="userid" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-lock"></i>
+				<input type="password" placeholder="password" name="password" id="password" required>
+			</div>
+			<!-- <div class="textbox">
+				<i class="fas fa-unlock-alt"></i>
+				<input type="password" placeholder="re-type password" name="repassword" id="repassword" >
+			</div> -->
+
+			<input class="btn" type="submit" name="signupBtn" id="signupBtn" value="Sign up">
+			
+		</div>
+			
+	</form>
+</body>
+</html>
+

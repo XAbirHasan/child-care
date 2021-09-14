@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baby info</title>
+	<link rel="stylesheet" type="text/css" href="../css/babySignupStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="row clearfix">
+		<img src="../img/logo1.png" class="logo" id="logo">
+			<ul class="main-nav">
+				<li><a href="customer.php">HOME</a></li>
+			</ul>
+	</div>
+
+	<form action="../php/babyinfo.php" method="post">
+		<div class="signup-box signup-box-back">
+			<h1>add info</h1>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="first name" name="fname" id="fname" required>
+			</div>
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="last name" name="lname" id="lname">
+			</div>
+			<div class="textbox">
+				<i class="fas fa-balance-scale-right"></i>
+				<input type="text" placeholder="weight of your baby" name="weight" id="weight" required>
+			</div>
+			<div class="radiobox">
+				<input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+	  			<input type="radio" name="gender" id="gender" value="female"> Female<br>
+	  			<input type="radio" name="gender" id="gender" value="other"> Other<br><br>
+  			</div>
+			<input class="btn" type="submit" name="add" id="add" value="add">
+			
+		</div>
+			
+	</form>
+</body>
+</html>

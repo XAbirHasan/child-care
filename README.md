@@ -1,6 +1,6 @@
 # child-care
  A web based platform for working parents for their children. (2019)
- This is made for my Database Management Systems Laboratory in 2019. This is a child care platfrom for working parents.
+ This is made for my Database Management Systems Laboratory in 2019. This is a child care platform for working parents.
 
  ## Project description
 Name: child care <br>
@@ -12,7 +12,7 @@ Year: 2019
 
 
 ## Demo Video
-<!-- [![IMAGE ALT TEXT](http://img.youtube.com/vi/dIQwkALpu0g/0.jpg)](http://www.youtube.com/watch?v=dIQwkALpu0g "child care || web project") -->
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/YWRjEEcdpO4/0.jpg)](http://www.youtube.com/watch?v=YWRjEEcdpO4 "child care || web project")
 
 ## Screen shot
 ### Home
